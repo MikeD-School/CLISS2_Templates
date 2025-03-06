@@ -8,12 +8,13 @@
 </head>
 <body>
     <script>
-        function check_range(pValue1,p)
+        function check_range(rValue,min,max)
         {
-            return pValue1*3;
+            return rValue>=min && rValue<=max;
         }
 
-        console.log(triple(1));
+        console.log(check_range(5,1,10));
+        console.log(check_range(6,2,5));
     </script>
 </body>
 </html>

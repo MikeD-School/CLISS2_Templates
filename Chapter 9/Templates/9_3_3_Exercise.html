@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function check_order(oValue1,oValue2,oValue3,oValue4)
+        {
+            let result="";
+            if(oValue1=<oValue2&&oValue2=<oValue3&&oValue3=<oValue4){
+                result="Increasing order";
+            }
+            else if(oValue1>=oValue2&&oValue2>=oValue3&&oValue3>=oValue4){
+                result="Decreasing order";
+            }
+            else{
+                result="Random order";
+            }
+            return result;
+        }
+
+        console.log(check_order(5,7,9,11));
+    </script>
+</body>
+</html>
