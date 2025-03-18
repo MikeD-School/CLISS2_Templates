@@ -12,6 +12,23 @@
 	<script>
 		'use strict';
 		//start coding here
+		function LeapYearCheck(yValue)
+		{
+			if(yValue % 4 != 0){
+				console.log("Not a Leap Year");
+			}
+			else if(yValue % 100 == 0){
+				console.log("Leap Year");
+			}
+			else if(yValue % 400 != 0){
+				console.log("Leap Year");
+			}
+			else{
+				console.log("Not a Leap Year");
+			}
+		}
+
+		LeapYearCheck(2024)
 
 	</script>
 </body>

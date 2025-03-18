@@ -35,6 +35,101 @@
 			'use strict';
 			let numberToCall="";
 			let booleanCall=true;
+
+			var Dialed_Number = ""
+			var Call=true;
+
+			function update(){
+				if(Call==true){
+					document.getElementById("callNumber").innerHTML="Dial: "+Dialed_Number;
+				}
+				else{
+					document.getElementById("callNumber").innerHTML="Calling: "+Dialed_Number;
+				}
+			
+			}
+
+			document.getElementById("im1").addEventListener("click", dial1);
+			function dial1(){
+				Dialed_Number = Dialed_Number+"1"
+				console.log(Dialed_Number);
+				update();
+			}
+			document.getElementById("im2").addEventListener("click", dial2);
+			function dial2(){
+				Dialed_Number = Dialed_Number+"2"
+				console.log(Dialed_Number);
+				update();
+			}
+			document.getElementById("im3").addEventListener("click", dial3);
+			function dial3(){
+				Dialed_Number = Dialed_Number+"3"
+				console.log(Dialed_Number);
+				update();
+			}
+			document.getElementById("im4").addEventListener("click", dial4);
+			function dial4(){
+				Dialed_Number = Dialed_Number+"4"
+				console.log(Dialed_Number);
+				update();
+			}
+			document.getElementById("im5").addEventListener("click", dial5);
+			function dial5(){
+				Dialed_Number = Dialed_Number+"5"
+				console.log(Dialed_Number);
+				update();
+			}
+			document.getElementById("im6").addEventListener("click", dial6);
+			function dial6(){
+				Dialed_Number = Dialed_Number+"6"
+				console.log(Dialed_Number);
+				update();
+			}
+			document.getElementById("im7").addEventListener("click", dial7);
+			function dial7(){
+				Dialed_Number = Dialed_Number+"7"
+				console.log(Dialed_Number);
+				update();
+			}
+			document.getElementById("im8").addEventListener("click", dial8);
+			function dial8(){
+				Dialed_Number = Dialed_Number+"8"
+				console.log(Dialed_Number);
+				update();
+			}
+			document.getElementById("im9").addEventListener("click", dial9);
+			function dial9(){
+				Dialed_Number = Dialed_Number+"9"
+				console.log(Dialed_Number);
+				update();
+			}
+			document.getElementById("im0").addEventListener("click", dial0);
+			function dial0(){
+				Dialed_Number = Dialed_Number+"0"
+				console.log(Dialed_Number);
+				update();
+			}
+			document.getElementById("im10").addEventListener("click", dialC);
+			function dialC(){
+				if(Call==true){
+					console.log("Call");
+					document.getElementById("im10").src="Phone_Call_Images/Phone_Hang_Up.png"
+					Call=false
+					update();
+				}
+				else{
+					console.log("Dial")
+					document.getElementById("im10").src="Phone_Call_Images/Phone_Pick_Up.png"
+					Call=true
+					Dialed_Number=""
+					update();
+				}
+			}
+
+			update();
+
+
+			
 			//When passing parameter values, use an "anonymous function" that calls the specified function with the parameters:‚
 			//element.addEventListener("click", function(){ myFunction(p1, p2); });
 		</script>
