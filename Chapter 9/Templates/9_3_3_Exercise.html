@@ -11,7 +11,7 @@
         function check_order(oValue1,oValue2,oValue3,oValue4)
         {
             let result="";
-            if(oValue1=<oValue2&&oValue2=<oValue3&&oValue3=<oValue4){
+            if(oValue1<=oValue2 && oValue2<=oValue3&&oValue3<=oValue4){
                 result="Increasing order";
             }
             else if(oValue1>=oValue2&&oValue2>=oValue3&&oValue3>=oValue4){
@@ -24,6 +24,8 @@
         }
 
         console.log(check_order(5,7,9,11));
+        console.log(check_order(21,17,8,4));
+        console.log(check_order(26,7,19,42));
     </script>
 </body>
 </html>
